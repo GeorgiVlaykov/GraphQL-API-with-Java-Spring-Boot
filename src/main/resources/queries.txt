@@ -1,0 +1,14 @@
+query {
+  firstQuery
+}
+
+query {
+  fullName(firstName:"Georgi",lastName: "Vlaykov")
+}
+
+query {
+  fullName(request: {
+    firstName: "John"
+    lastName: "Doe"
+  })
+}
