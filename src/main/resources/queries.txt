@@ -2,13 +2,33 @@ query {
   firstQuery
 }
 
+
 query {
   fullName(firstName:"Georgi",lastName: "Vlaykov")
 }
+
 
 query {
   fullName(request: {
     firstName: "John"
     lastName: "Doe"
   })
+}
+
+
+query
+{
+  student(id: 1) {
+    id
+    firstName
+    lastName
+    email
+    street
+    city
+    learningSubjects {
+      id
+      subjectName
+      marksObtained
+    }
+  }
 }
